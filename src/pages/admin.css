@@ -1,0 +1,6 @@
+/* src/pages/admin.css */
+.admin-wrap { max-width:1100px; margin:30px auto; padding:20px; background:#fff; border-radius:8px; }
+.charts { display:flex; gap:20px; margin-bottom:20px; flex-wrap:wrap; }
+.chart-card { flex:1; min-width:320px; padding:12px; background:#f8f8f8; border-radius:8px; }
+.list { margin-top:12px; }
+.item { padding:10px; border-bottom:1px solid #eee; }

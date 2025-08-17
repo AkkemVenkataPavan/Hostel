@@ -1,0 +1,117 @@
+.dashboard-layout {
+  display: flex;
+  height: 100vh;
+}
+
+.dashboard-sidebar {
+  width: 250px;
+  background: #f4f4f4;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.profile-card {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logout-btn {
+  background: red;
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+.dashboard-main {
+  flex: 1;
+  padding: 20px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.card:hover {
+  background: #f0f0f0;
+}
+
+/* ---------------- New Profile Form Styling ---------------- */
+
+.profile-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.profile-popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.profile-popup-content h2 {
+  margin-bottom: 5px;
+  text-align: center;
+  color: #333;
+}
+
+.profile-popup-content input[type="text"],
+.profile-popup-content input[type="file"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.profile-popup-content input[type="file"] {
+  padding: 4px;
+}
+
+.profile-popup-content button {
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  background: #007bff;
+  color: white;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.profile-popup-content button:hover {
+  background: #0056b3;
+}
+
+.profile-popup-content button:nth-child(2) {
+  background: #6c757d;
+}
+
+.profile-popup-content button:nth-child(2):hover {
+  background: #5a6268;
+}
